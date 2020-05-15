@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/isValidUnless">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">is valid unless</rdfs:label>
+    <rdfs:comment xml:lang="en">A claim that is restricted by a rebuttal of an argument.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/relatesTo"/>
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Rebuttal"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/isDisputedBy"/>
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Claim"/>
+    <dc:description xml:lang="en">By means of the property chain defined, the assertion that links a claim to the relative rebuttal is automatically inferred starting from the high-level description of an argument (realized through the sub-properties of 'involves' and their inverse properties).</dc:description>
+    <owl:propertyChainAxiom rdf:nodeID="Nf2c001a5ff5e4f9382dbe153d7cf65c5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel">
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fabio Vitali</dc:creator>
+    <dc:title xml:lang="en">The Argument Model Ontology
+(AMO)</dc:title>
+    <rdfs:comment xml:lang="en">The Argument Model Ontology is an OWL 2 DL ontology that allows to describe argumentation according to the 'Toulmin Model of Argument'.</rdfs:comment>
+    <dc:rights xml:lang="it">Questa ontologia è distribuita con licenza Creative Commons Attribution - http://creativecommons.org/licenses/by/3.0</dc:rights>
+    <owl:imports rdf:resource="http://purl.org/spar/cito/"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
+    <dc:description xml:lang="it">Nella maggior parte dei suoi lavori, Toulmin ha evidenziato come l'assolutismo (rappresentato da argomenti teorici o analitici) abbia un valore pratico limitato. L'assolutismo è derivato dalla logica formale idealizzata di Platone, che supporta pienamente la verità universale. Conformemente, gli assolutisti credono che le questioni morali possano essere risolte attraverso l'uso di ben stabiliti principi morali, in modo del tutto indipendente dal contesto. Contrariamente, Toulmin asseriscie che la maggior parte di questi così detti principi morali sono irrilevanti per le situazioni reali affrontate dagli esseri umani nella vita di tutti i giorni.
+
+Per dare più vigore a quest sua idea, Toulmin ha introdutto il concetto di campi argomentativi: in "The Uses of Argument (1958)", Toulmin afferma che alcuni aspetti dell'argomentazione variano da campo a campo e sono conseguentemente chiamati "dipendenti", mentre altri aspetti sono percepiti allo stesso modo in tutti i campi e vengono quindi chiamati "invarianti". Toulmin crede che il fallimento dell'assolutismo sia da amputare allo trascurare gli aspetti "dipendenti" dell'argomentazione; infatti l'assolutismo assume che tutti gli aspetti argomentativi siano "invarianti".
+
+Come conseguenza a queste critiche, Toulmin ha sviluppato un tipo differente di argomentazione, chiamato argomentazione pratica (anche conosciuto come argomentazione sostanziale). In contrasto con l'argomentazione teorica degli assolutisti, l'argomentazione pratica di Toulmin si focalizza sulla fuzione giustificativa dell'argomentazione, opposta alla funzione inferenziale dell'argomentazione teorica. Laddove l'argomentazione teorica produce inferenze sulla base di un insieme di principi per poi arrivare alla "pretesa", l'argomentazione pratica prima trova una "pretesa" di interesse per poi fornirne una giustificazione. Toulmin crede che il ragionamento sia meno un'attività di inferenza, che coinvolge l'identificazione di nuove idee, e più un processo di verifica di idee che già esistono - ovvero un atto raggiungibile attraverso il processo di giustificazione.
+
+Toulmin credeva che, per essere efficacie, una buona argomentazione necessita di una buona giustificazione per una "pretesa". Lui credeva che questo avrebbe permesso di resistere alle critiche e di guadagnare un verdetto favorevole. Toulmin proponeva una struttura contenente sei componenti intercorrelate per analizzare le argomentazioni: pretesa (claim), dato (evidence), garanzia (warrant), fondamento (backing), qualificatore (qualifier) e confutazione (rebuttal).
+
+Questa ontologia si propone di codificare la teoria di Toulmin attraverso classi e proprietà OWL in modo da descrivere una rete di entità intercollegate che partecipano, con un ruolo specifico, ad uno o più argomentazioni.
+
+In più, l'ontologia è allineata con CiTO (Citation Typing Ontology, http://purl.org/spar/cito), un'ontologia per la caratterizzazione di citazioni (fattuali e retoriche) che è parte di SPAR, una suite di ontologie per il Semantic Publishing and Referencing.</dc:description>
+    <dc:description rdf:resource="http://dwellonit.svn.sourceforge.net/svnroot/dwellonit/ArgumentModel/amo.png"/>
+    <dc:title xml:lang="it">Ontologia del Modello di Argomentazione</dc:title>
+    <dc:rights xml:lang="en">This ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0</dc:rights>
+    <rdfs:comment xml:lang="it">L'Ontologia del Modello di Argomentazione è un'ontologia OWL 2 DL che permette la descrizione dell'apparato argomentativo conformemente alla teoria di Toulmin.</rdfs:comment>
+    <dc:date>2011-05-04</dc:date>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dc:description xml:lang="en">Throughout many of his works, Toulmin pointed out that absolutism (represented by theoretical or analytic arguments) has limited practical value. Absolutism is derived from Plato’s idealized formal logic, which advocates universal truth; accordingly, absolutists believe that moral issues can be resolved by adhering to a standard set of moral principles, regardless of context. By contrast, Toulmin asserts that many of these so-called standard principles are irrelevant to real situations encountered by human beings in daily life.
+
+To reinforce his assertion, Toulmin introduced the concept of argument fields; in 'The Uses of Argument (1958)', Toulmin states that some aspects of arguments vary from field to field, and are hence called 'field-dependent', while other aspects of argument are the same throughout all fields, and are hence called 'field-invariant'. The flaw of absolutism, Toulmin believes, lies in its unawareness of the field-dependent aspect of argument; absolutism assumes that all aspects of argument are field invariant.
+
+As consequence of those critiques, Toulmin aimed to develop a different type of argument, called practical arguments (also known as substantial arguments). In contrast to absolutists’ theoretical arguments, Toulmin’s practical argument is intended to focus on the justificatory function of argumentation, as opposed to the inferential function of theoretical arguments. Whereas theoretical arguments make inferences based on a set of principles to arrive at a claim, practical arguments first find a claim of interest, and then provide justification for it. Toulmin believed that reasoning is less an activity of inference, involving the discovering of new ideas, and more a process of testing and sifting already existing ideas—an act achievable through the process of justification.
+
+Toulmin believed that for a good argument to succeed, it needs to provide good justification for a claim. This, he believed, will ensure it stands up to criticism and earns a favourable verdict. Toulmin proposed a layout containing six interrelated components for analyzing arguments: claim, evidence, warrant, backing, qualifier and rebuttal.
+
+This ontology aims to encode the Toulmin's theory through OWL classes and properties, in order to describe a web of inter-linked entities that participate, with a specific role, in one or more arguments.
+
+Moreover, this ontology is aligned with CiTO, the Citation Typing Ontology (http://purl.org/spar/cito), an ontology for the characterization of citations, both factually and rhetorically that forms part of SPAR, a suite of Semantic Publishing and Referencing Ontologies.</dc:description>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvio Peroni</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/supports">
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Warrant"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">supports</rdfs:label>
+    <rdfs:comment xml:lang="en">An evidence that supports a warrant of an argument.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Evidence"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/relatesTo"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/givesSupportTo"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0940ab1a035b4a23a4c481c76e61d47a">
+    <rdf:rest rdf:nodeID="Nb43510458d094a5fad7d55ef6f79b014"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/Evidence">
+    <rdfs:label xml:lang="en">evidence</rdfs:label>
+    <rdfs:comment xml:lang="en">A fact that represents a foundation for the claim - e.g., 'This ontology was developed in OWL'.</rdfs:comment>
+    <owl:equivalentClass rdf:nodeID="N2f43762d0015402da0b7e253b4439ebd"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0fea9b93ac024171b6cbdb2109370fa3">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isBackingIn"/>
+    <rdf:rest rdf:nodeID="Nb29c3f620cea48b19f8743fbc8d05619"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na1c5614cd4a54794ba6db6e0b34dc253">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isWarrantIn"/>
+    <rdf:rest rdf:nodeID="Na126b46f56b641138f9f3f475ca59a2c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8738016682a040e3872f2e2b49f12051">
+    <owl:someValuesFrom rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Argument"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isEvidenceIn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb723f4ccaa7a4643a0348934fd2e6980">
+    <rdf:first rdf:nodeID="N947c0aeb65bb4af08e36a23a08ae865f"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/hasEvidence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Evidence"/>
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Argument"/>
+    <rdfs:label xml:lang="en">has evidence</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/involves"/>
+    <rdfs:comment xml:lang="en">An argument includes an evidence as one of its (mandatory) components.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity">
+    <rdfs:comment xml:lang="en">An entity that takes part in an argument according to the 'Toulmin model of argument'.</rdfs:comment>
+    <owl:equivalentClass rdf:nodeID="N647c7b2a2174414b8afeed92e67b3d34"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">argumentation entity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/hasQualifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has qualifier</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Argument"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/involves"/>
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Qualifier"/>
+    <rdfs:comment xml:lang="en">An argument includes a qualifier as one of its (optional) components.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N24c52741b0e640799188233e628e709e">
+    <rdf:rest rdf:nodeID="N5bbb0aab40c141d4a94ec5d0245f96ec"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/isBackingIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">An argumentative entity linked to an argument in which it is considered a backing.</rdfs:comment>
+    <rdfs:label xml:lang="en">is backing in</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn"/>
+    <owl:inverseOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/hasBacking"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc2a8a4f85094467baa903cf8e50f3cef">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Rebuttal"/>
+    <rdf:rest rdf:nodeID="Nf0d1ba10a8c84d6cbac32494d46f1cad"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd12e4a3d28184ea9b48212e7610bf70d">
+    <rdf:rest rdf:nodeID="N3e7e17325ef4408895c5e7094b213d25"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Backing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/leadsTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Claim"/>
+    <owl:propertyChainAxiom rdf:nodeID="Na1c5614cd4a54794ba6db6e0b34dc253"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/relatesTo"/>
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Warrant"/>
+    <dc:description xml:lang="en">By means of the property chain defined, the assertion that links a warrant to the relative claim is automatically inferred starting from the high-level description of an argument (realized through the sub-properties of 'involves' and their inverse properties).</dc:description>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/confirms"/>
+    <rdfs:label xml:lang="en">leads to</rdfs:label>
+    <dc:description xml:lang="en">A warrant that points to a claim from the related evidence within an argument.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndb5edfac7dde49eca58ff2e0c3236071">
+    <rdf:rest rdf:nodeID="Nf0078ebe78e3428592f272e35229fc5d"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isEvidenceIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/Warrant">
+    <rdfs:label xml:lang="en">warrant</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N38c7211e05e14811a990a47d43378fe9"/>
+    <rdfs:comment xml:lang="en">A statement bridging from the evidence to the claim - e.g., 'An ontology developed in OWL is a consistent OWL ontology'.
+</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N502e33df3b1d4590831aa3f9ce866e6f">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity"/>
+    <rdf:rest rdf:nodeID="N582ab7b3507840bfbdade898e388a65e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na9d8415d956c477ba5ec351f6c0d4363">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn"/>
+    <owl:someValuesFrom rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Argument"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/involves"/>
+    <rdfs:label xml:lang="en">is involved in</rdfs:label>
+    <rdfs:comment xml:lang="en">An argumentation entity involved in the presentation of an argument.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/isWarrantIn">
+    <rdfs:comment xml:lang="en">An argumentative entity linked to an argument in which it is considered a warrant.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">is warrant in</rdfs:label>
+    <owl:inverseOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/hasWarrant"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/isEvidenceIn">
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">is evidence in</rdfs:label>
+    <rdfs:comment xml:lang="en">An argumentative entity linked to an argument in which it is considered an evidence.</rdfs:comment>
+    <owl:inverseOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/hasEvidence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/Argument">
+    <rdfs:label xml:lang="en">argument</rdfs:label>
+    <dc:description rdf:resource="http://dwellonit.svn.sourceforge.net/svnroot/dwellonit/ArgumentModel/argument.png"/>
+    <rdfs:subClassOf rdf:nodeID="Nb2df9a45935d49b3a2d7ef8a55debcaf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">An argument, or practical argument according to the 'Toulmin model of argument', focuses on the justificatory function of argumentation: practical arguments first find a claim of interest, and then provide justification for it.
+
+Each argument must be analyzed according to six interrelated components: claim, evidence, warrant, backing, rebuttal and qualifier. The first three elements, 'claim', 'data' and 'warrant', are considered as the essential components of practical arguments, while the second triad, 'qualifier', 'backing', and 'rebuttal', may not be needed in some arguments.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/forces">
+    <rdfs:label xml:lang="en">forces</rdfs:label>
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Claim"/>
+    <dc:description xml:lang="en">By means of the property chain defined, the assertion that links a qualifier to the relative claim is automatically inferred starting from the high-level description of an argument (realized through the sub-properties of 'involves' and their inverse properties).</dc:description>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/qualifies"/>
+    <owl:propertyChainAxiom rdf:nodeID="N5effa573bcb042f2b05ebd96f029bb77"/>
+    <rdfs:comment xml:lang="en">A qualifier that expresses as degree of force concerning a claim of an argument.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Qualifier"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/relatesTo"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf2c001a5ff5e4f9382dbe153d7cf65c5">
+    <rdf:rest rdf:nodeID="Nd1fa6c1560e241b7b5f7fab20c045751"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isClaimIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5bbb0aab40c141d4a94ec5d0245f96ec">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Qualifier"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/isRebuttalIn">
+    <owl:inverseOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/hasRebuttal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">An argumentative entity linked to an argument in which it is considered a rebuttal.</rdfs:comment>
+    <rdfs:label xml:lang="en">is rebuttal in</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N010dfd7c46a843fa9b5ed76be903f209">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Qualifier"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N647c7b2a2174414b8afeed92e67b3d34">
+    <owl:intersectionOf rdf:nodeID="Nec38f8971de14b0bba4187f0730704db"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/backs">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">A backing that attests the warrant of an argument.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/relatesTo"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/givesBackgroundTo"/>
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Backing"/>
+    <rdfs:label xml:lang="en">backs</rdfs:label>
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Warrant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/isClaimIn">
+    <rdfs:comment xml:lang="en">An argumentative entity linked to an argument in which it is considered a claim.</rdfs:comment>
+    <rdfs:label xml:lang="en">is claim in</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn"/>
+    <owl:inverseOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/hasClaim"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/hasClaim">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">An argument includes a claim as one of its (mandatory) components.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Claim"/>
+    <rdfs:label xml:lang="en">has claim</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Argument"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/involves"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9bc26371a0614da890861e5bdd598878">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N24c52741b0e640799188233e628e709e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb43510458d094a5fad7d55ef6f79b014">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="N8d048aba3d3940a2b72ed8911056a06c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N64d5febf743d4ede9b8e920a0b899a37">
+    <rdf:rest rdf:nodeID="N010dfd7c46a843fa9b5ed76be903f209"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/hasBacking">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">An argument includes a backing as one of its (optional) components.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/involves"/>
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Argument"/>
+    <rdfs:label xml:lang="en">has backing</rdfs:label>
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Backing"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9a5940f583ec4f4f963cbe945113d5a5">
+    <owl:members rdf:nodeID="N0fea9b93ac024171b6cbdb2109370fa3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfbc01e71f43f46059f4c5f76dc232456">
+    <rdf:rest rdf:nodeID="N03204be913f649d18850263ec132e53c"/>
+    <rdf:first rdf:nodeID="Nf4c32bd1dec24104bfa15e029d693d53"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5aa541fcd2214c3f89667955ecd1e5de">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/hasWarrant"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne67ab01c495c4fcdaf5c6227b369b447">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="Nf0cd68dc09a54ae69e3b464bb5311a78"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/hasRebuttal">
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/involves"/>
+    <rdfs:label xml:lang="en">has rebuttal</rdfs:label>
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Rebuttal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">An argument includes a rebuttal as one of its (optional) components.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Argument"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc4df3102af0042f091882ce841677df6">
+    <owl:someValuesFrom rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Argument"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isQualifierIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na430ba5f49884d56adef0a8c87e82ac5">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity"/>
+    <rdf:rest rdf:nodeID="Ne67ab01c495c4fcdaf5c6227b369b447"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N213efa263732418ba532ddc9b36c3cb7">
+    <rdf:rest rdf:nodeID="Nd288b3e7b6d34f66890a22fc248935a1"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isRebuttalIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/proves">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/isCitedAsEvidenceBy"/>
+    <rdfs:label xml:lang="en">proves</rdfs:label>
+    <owl:propertyChainAxiom rdf:nodeID="Nb3280e40c1fb48f2bf20456610892a0e"/>
+    <rdfs:comment xml:lang="en">An evidence that founds a claim of an argument.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Evidence"/>
+    <dc:description xml:lang="en">By means of the property chain defined, the assertion that links an evidence to the relative claim is automatically inferred starting from the high-level description of an argument (realized through the sub-properties of 'involves' and their inverse properties).</dc:description>
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Claim"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/relatesTo"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5eaeeb16c1874881964374180a71052d">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="N75a8623d63f84fd88deb2df1ab3aeda7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/Rebuttal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">rebuttal</rdfs:label>
+    <owl:equivalentClass rdf:nodeID="N301491d70e1149f18133e5b9dd0cce88"/>
+    <rdfs:comment xml:lang="en">Restrictions that may be applied to the claim - 'Unless a reasoner for OWL 2 proves that it is not consistent'.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/relatesTo">
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">relates to</rdfs:label>
+    <rdfs:comment xml:lang="en">An argumentation entity relates to another one in some way - for example, it is the evidence that is used to prove a claim of an argument.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:nodeID="N9bc26371a0614da890861e5bdd598878"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2f43762d0015402da0b7e253b4439ebd">
+    <owl:intersectionOf rdf:nodeID="N502e33df3b1d4590831aa3f9ce866e6f"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nec38f8971de14b0bba4187f0730704db">
+    <rdf:first rdf:nodeID="N8c905500751c41209b22dcb3489d3113"/>
+    <rdf:rest rdf:nodeID="N743ac28759294b7b8e4935e85446536d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N947c0aeb65bb4af08e36a23a08ae865f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/hasClaim"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8c905500751c41209b22dcb3489d3113">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nd12e4a3d28184ea9b48212e7610bf70d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/hasWarrant">
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Warrant"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has warrant</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/involves"/>
+    <rdfs:comment xml:lang="en">An argument includes a warrant as one of its (mandatory) components.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Argument"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N743ac28759294b7b8e4935e85446536d">
+    <rdf:first rdf:nodeID="Na9d8415d956c477ba5ec351f6c0d4363"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndc895b30f234414bb6dcc881f42ed171">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Argument"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isWarrantIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8d048aba3d3940a2b72ed8911056a06c">
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isBackingIn"/>
+    <owl:someValuesFrom rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Argument"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N301491d70e1149f18133e5b9dd0cce88">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Na430ba5f49884d56adef0a8c87e82ac5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nda8241c6d4a74ea0ad5374f8ce7c37ed">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="Ndc895b30f234414bb6dcc881f42ed171"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/Backing">
+    <rdfs:label xml:lang="en">backing</rdfs:label>
+    <rdfs:comment xml:lang="en">Sort of credentials that certifies the warrant - e.g., the OWL 2 document specifications.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Nd49da99692104d5dbdab8a5cf8e72e4d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/Claim">
+    <owl:equivalentClass rdf:nodeID="N643c949124cf47519a428e7198eac34d"/>
+    <rdfs:comment xml:lang="en">A fact that must be established - e.g., 'This is a consistent OWL ontology'.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">claim</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/Qualifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Nc4df3102af0042f091882ce841677df6"/>
+    <rdfs:label xml:lang="en">qualifier</rdfs:label>
+    <rdfs:comment xml:lang="en">Words or phrases that express the degree of certainty of the claim such as “certainly”, “possible”, “probably”, “presumably”, etc.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf4c32bd1dec24104bfa15e029d693d53">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/hasEvidence"/>
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd1fa6c1560e241b7b5f7fab20c045751">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/hasRebuttal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/isQualifierIn">
+    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn"/>
+    <rdfs:comment xml:lang="en">An sentence or word linked to an argument with the scope of qualifying the argument claim.</rdfs:comment>
+    <rdfs:label xml:lang="en">is qualifier in</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/hasQualifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb3280e40c1fb48f2bf20456610892a0e">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isEvidenceIn"/>
+    <rdf:rest rdf:nodeID="N347e714720844cacb58eb6b38ddb0e76"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N75a8623d63f84fd88deb2df1ab3aeda7">
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isClaimIn"/>
+    <owl:someValuesFrom rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Argument"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N38c7211e05e14811a990a47d43378fe9">
+    <owl:intersectionOf rdf:nodeID="Naf761b17299940338394a3ae7eca489d"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb29c3f620cea48b19f8743fbc8d05619">
+    <rdf:rest rdf:nodeID="Ndb5edfac7dde49eca58ff2e0c3236071"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isClaimIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf0078ebe78e3428592f272e35229fc5d">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isQualifierIn"/>
+    <rdf:rest rdf:nodeID="N213efa263732418ba532ddc9b36c3cb7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na126b46f56b641138f9f3f475ca59a2c">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/hasClaim"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf053dfc99521458ba7350b9c76b2d91e">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity"/>
+    <rdf:rest rdf:nodeID="N5eaeeb16c1874881964374180a71052d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd288b3e7b6d34f66890a22fc248935a1">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isWarrantIn"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd49da99692104d5dbdab8a5cf8e72e4d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N0940ab1a035b4a23a4c481c76e61d47a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf0d1ba10a8c84d6cbac32494d46f1cad">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Warrant"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf0cd68dc09a54ae69e3b464bb5311a78">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isRebuttalIn"/>
+    <owl:someValuesFrom rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Argument"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb2df9a45935d49b3a2d7ef8a55debcaf">
+    <owl:intersectionOf rdf:nodeID="Nfbc01e71f43f46059f4c5f76dc232456"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2011/02/argumentmodel/involves">
+    <rdfs:range rdf:nodeID="N647b29811b0446f79feaf729f74a6484"/>
+    <rdfs:comment xml:lang="en">An argument involves an argumentation entity (claim, evidence, warrant, backing, rebuttal) or a qualifier.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Argument"/>
+    <rdfs:label xml:lang="en">involves</rdfs:label>
+    <dc:description xml:lang="en">This property and its sub-properties serve to describe an argument from an high-level perspective (i.e., which argumentation entities take part in it and what role they hold) rather than from a factual point of view (i.e., how argumentation entities are inter-linked between them).</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N582ab7b3507840bfbdade898e388a65e">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="N8738016682a040e3872f2e2b49f12051"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N347e714720844cacb58eb6b38ddb0e76">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/hasClaim"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5effa573bcb042f2b05ebd96f029bb77">
+    <rdf:rest rdf:nodeID="Nf563934814514f6887ce7c8bb5df0fc3"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/isQualifierIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf563934814514f6887ce7c8bb5df0fc3">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/hasClaim"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naf761b17299940338394a3ae7eca489d">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity"/>
+    <rdf:rest rdf:nodeID="Nda8241c6d4a74ea0ad5374f8ce7c37ed"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N643c949124cf47519a428e7198eac34d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Nf053dfc99521458ba7350b9c76b2d91e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3e7e17325ef4408895c5e7094b213d25">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Claim"/>
+    <rdf:rest rdf:nodeID="N924c777c61b2435992fc7fce02128db6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N647b29811b0446f79feaf729f74a6484">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N64d5febf743d4ede9b8e920a0b899a37"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N03204be913f649d18850263ec132e53c">
+    <rdf:first rdf:nodeID="N5aa541fcd2214c3f89667955ecd1e5de"/>
+    <rdf:rest rdf:nodeID="Nb723f4ccaa7a4643a0348934fd2e6980"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N924c777c61b2435992fc7fce02128db6">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2011/02/argumentmodel/Evidence"/>
+    <rdf:rest rdf:nodeID="Nc2a8a4f85094467baa903cf8e50f3cef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,316 @@
+<http://www.essepuntato.it/2011/02/argumentmodel/isValidUnless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/spar/cito/> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isValidUnless> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/spar/cito/isDisputedBy> .
+<http://www.essepuntato.it/2011/02/argumentmodel/supports> <http://www.w3.org/2000/01/rdf-schema#label> "supports"@en .
+_:N0940ab1a035b4a23a4c481c76e61d47a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N0fea9b93ac024171b6cbdb2109370fa3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb29c3f620cea48b19f8743fbc8d05619 .
+_:Na1c5614cd4a54794ba6db6e0b34dc253 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na126b46f56b641138f9f3f475ca59a2c .
+_:N8738016682a040e3872f2e2b49f12051 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.essepuntato.it/2011/02/argumentmodel/Argument> .
+_:Nb723f4ccaa7a4643a0348934fd2e6980 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/involves> .
+<http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity that takes part in an argument according to the 'Toulmin model of argument'."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasQualifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2011/02/argumentmodel/Qualifier> .
+_:N24c52741b0e640799188233e628e709e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isBackingIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.essepuntato.it/2011/02/argumentmodel/hasBacking> .
+_:Nc2a8a4f85094467baa903cf8e50f3cef <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nf0d1ba10a8c84d6cbac32494d46f1cad .
+<http://www.essepuntato.it/2011/02/argumentmodel/isValidUnless> <http://purl.org/dc/elements/1.1/description> "By means of the property chain defined, the assertion that links a claim to the relative rebuttal is automatically inferred starting from the high-level description of an argument (realized through the sub-properties of 'involves' and their inverse properties)."@en .
+_:Nd12e4a3d28184ea9b48212e7610bf70d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N3e7e17325ef4408895c5e7094b213d25 .
+<http://www.essepuntato.it/2011/02/argumentmodel/leadsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Ndb5edfac7dde49eca58ff2e0c3236071 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/isEvidenceIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Warrant> <http://www.w3.org/2000/01/rdf-schema#comment> "A statement bridging from the evidence to the claim - e.g., 'An ontology developed in OWL is a consistent OWL ontology'.\n"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/supports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Evidence> <http://www.w3.org/2000/01/rdf-schema#comment> "A fact that represents a foundation for the claim - e.g., 'This ontology was developed in OWL'."@en .
+_:N502e33df3b1d4590831aa3f9ce866e6f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N582ab7b3507840bfbdade898e388a65e .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://purl.org/dc/elements/1.1/description> <http://dwellonit.svn.sourceforge.net/svnroot/dwellonit/ArgumentModel/amo.png> .
+<http://www.essepuntato.it/2011/02/argumentmodel/supports> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/spar/cito/givesSupportTo> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isValidUnless> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2011/02/argumentmodel/Claim> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isValidUnless> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:Nf2c001a5ff5e4f9382dbe153d7cf65c5 .
+_:Na9d8415d956c477ba5ec351f6c0d4363 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.essepuntato.it/2011/02/argumentmodel/Argument> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasQualifier> <http://www.w3.org/2000/01/rdf-schema#label> "has qualifier"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/isWarrantIn> <http://www.w3.org/2000/01/rdf-schema#label> "is warrant in"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/isEvidenceIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.essepuntato.it/2011/02/argumentmodel/hasEvidence> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Argument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2011/02/argumentmodel/forces> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/spar/cito/qualifies> .
+_:Nf2c001a5ff5e4f9382dbe153d7cf65c5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/isClaimIn> .
+_:N5bbb0aab40c141d4a94ec5d0245f96ec <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/Qualifier> .
+_:N8738016682a040e3872f2e2b49f12051 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2011/02/argumentmodel/isEvidenceIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isRebuttalIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.essepuntato.it/2011/02/argumentmodel/hasRebuttal> .
+<http://www.essepuntato.it/2011/02/argumentmodel/supports> <http://www.w3.org/2000/01/rdf-schema#comment> "An evidence that supports a warrant of an argument."@en .
+_:N24c52741b0e640799188233e628e709e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N5bbb0aab40c141d4a94ec5d0245f96ec .
+<http://www.essepuntato.it/2011/02/argumentmodel/forces> <http://www.w3.org/2000/01/rdf-schema#comment> "A qualifier that expresses as degree of force concerning a claim of an argument."@en .
+_:N010dfd7c46a843fa9b5ed76be903f209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N647c7b2a2174414b8afeed92e67b3d34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel/backs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2011/02/argumentmodel/Warrant> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isClaimIn> <http://www.w3.org/2000/01/rdf-schema#label> "is claim in"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/Argument> <http://purl.org/dc/elements/1.1/description> <http://dwellonit.svn.sourceforge.net/svnroot/dwellonit/ArgumentModel/argument.png> .
+_:Ndb5edfac7dde49eca58ff2e0c3236071 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nf0078ebe78e3428592f272e35229fc5d .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasClaim> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/involves> .
+<http://www.essepuntato.it/2011/02/argumentmodel/leadsTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/relatesTo> .
+_:N9bc26371a0614da890861e5bdd598878 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nb43510458d094a5fad7d55ef6f79b014 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N8d048aba3d3940a2b72ed8911056a06c .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasClaim> <http://www.w3.org/2000/01/rdf-schema#label> "has claim"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/isEvidenceIn> <http://www.w3.org/2000/01/rdf-schema#label> "is evidence in"@en .
+_:N64d5febf743d4ede9b8e920a0b899a37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N010dfd7c46a843fa9b5ed76be903f209 .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasBacking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://purl.org/dc/elements/1.1/description> "Throughout many of his works, Toulmin pointed out that absolutism (represented by theoretical or analytic arguments) has limited practical value. Absolutism is derived from Plato\u2019s idealized formal logic, which advocates universal truth; accordingly, absolutists believe that moral issues can be resolved by adhering to a standard set of moral principles, regardless of context. By contrast, Toulmin asserts that many of these so-called standard principles are irrelevant to real situations encountered by human beings in daily life.\n\nTo reinforce his assertion, Toulmin introduced the concept of argument fields; in 'The Uses of Argument (1958)', Toulmin states that some aspects of arguments vary from field to field, and are hence called 'field-dependent', while other aspects of argument are the same throughout all fields, and are hence called 'field-invariant'. The flaw of absolutism, Toulmin believes, lies in its unawareness of the field-dependent aspect of argument; absolutism assumes that all aspects of argument are field invariant.\n\nAs consequence of those critiques, Toulmin aimed to develop a different type of argument, called practical arguments (also known as substantial arguments). In contrast to absolutists\u2019 theoretical arguments, Toulmin\u2019s practical argument is intended to focus on the justificatory function of argumentation, as opposed to the inferential function of theoretical arguments. Whereas theoretical arguments make inferences based on a set of principles to arrive at a claim, practical arguments first find a claim of interest, and then provide justification for it. Toulmin believed that reasoning is less an activity of inference, involving the discovering of new ideas, and more a process of testing and sifting already existing ideas\u2014an act achievable through the process of justification.\n\nToulmin believed that for a good argument to succeed, it needs to provide good justification for a claim. This, he believed, will ensure it stands up to criticism and earns a favourable verdict. Toulmin proposed a layout containing six interrelated components for analyzing arguments: claim, evidence, warrant, backing, qualifier and rebuttal.\n\nThis ontology aims to encode the Toulmin's theory through OWL classes and properties, in order to describe a web of inter-linked entities that participate, with a specific role, in one or more arguments.\n\nMoreover, this ontology is aligned with CiTO, the Citation Typing Ontology (http://purl.org/spar/cito), an ontology for the characterization of citations, both factually and rhetorically that forms part of SPAR, a suite of Semantic Publishing and Referencing Ontologies."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/isClaimIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N9a5940f583ec4f4f963cbe945113d5a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "An argumentation entity involved in the presentation of an argument."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/forces> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:N5effa573bcb042f2b05ebd96f029bb77 .
+_:Nfbc01e71f43f46059f4c5f76dc232456 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nf4c32bd1dec24104bfa15e029d693d53 .
+_:N5aa541fcd2214c3f89667955ecd1e5de <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2011/02/argumentmodel/hasWarrant> .
+_:N647c7b2a2174414b8afeed92e67b3d34 <http://www.w3.org/2002/07/owl#intersectionOf> _:Nec38f8971de14b0bba4187f0730704db .
+<http://www.essepuntato.it/2011/02/argumentmodel/Warrant> <http://www.w3.org/2002/07/owl#equivalentClass> _:N38c7211e05e14811a990a47d43378fe9 .
+_:Ne67ab01c495c4fcdaf5c6227b369b447 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.essepuntato.it/2011/02/argumentmodel/forces> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2011/02/argumentmodel/Qualifier> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasRebuttal> <http://www.w3.org/2000/01/rdf-schema#label> "has rebuttal"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://purl.org/dc/elements/1.1/title> "The Argument Model Ontology\n(AMO)"@en .
+_:Nc4df3102af0042f091882ce841677df6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Na430ba5f49884d56adef0a8c87e82ac5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne67ab01c495c4fcdaf5c6227b369b447 .
+_:N213efa263732418ba532ddc9b36c3cb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/isRebuttalIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel/proves> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/relatesTo> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isBackingIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn> .
+_:N5eaeeb16c1874881964374180a71052d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N75a8623d63f84fd88deb2df1ab3aeda7 .
+<http://www.essepuntato.it/2011/02/argumentmodel/Rebuttal> <http://www.w3.org/2000/01/rdf-schema#label> "rebuttal"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/relatesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "An argumentation entity relates to another one in some way - for example, it is the evidence that is used to prove a claim of an argument."@en .
+_:N64d5febf743d4ede9b8e920a0b899a37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity> .
+_:N2f43762d0015402da0b7e253b4439ebd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nec38f8971de14b0bba4187f0730704db <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N8c905500751c41209b22dcb3489d3113 .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://purl.org/dc/elements/1.1/rights> "This ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0"@en .
+_:N947c0aeb65bb4af08e36a23a08ae865f <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2011/02/argumentmodel/hasClaim> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasBacking> <http://www.w3.org/2000/01/rdf-schema#label> "has backing"@en .
+_:N8c905500751c41209b22dcb3489d3113 <http://www.w3.org/2002/07/owl#unionOf> _:Nd12e4a3d28184ea9b48212e7610bf70d .
+<http://www.essepuntato.it/2011/02/argumentmodel/isRebuttalIn> <http://www.w3.org/2000/01/rdf-schema#label> "is rebuttal in"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasWarrant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2011/02/argumentmodel/Argument> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasQualifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N743ac28759294b7b8e4935e85446536d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ndc895b30f234414bb6dcc881f42ed171 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2011/02/argumentmodel/isWarrantIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasQualifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2011/02/argumentmodel/Argument> .
+<http://www.essepuntato.it/2011/02/argumentmodel/relatesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+_:N0940ab1a035b4a23a4c481c76e61d47a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb43510458d094a5fad7d55ef6f79b014 .
+<http://www.essepuntato.it/2011/02/argumentmodel/leadsTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/spar/cito/confirms> .
+_:N8d048aba3d3940a2b72ed8911056a06c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N9a5940f583ec4f4f963cbe945113d5a5 <http://www.w3.org/2002/07/owl#members> _:N0fea9b93ac024171b6cbdb2109370fa3 .
+<http://www.essepuntato.it/2011/02/argumentmodel/proves> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/spar/cito/isCitedAsEvidenceBy> .
+_:N301491d70e1149f18133e5b9dd0cce88 <http://www.w3.org/2002/07/owl#intersectionOf> _:Na430ba5f49884d56adef0a8c87e82ac5 .
+<http://www.essepuntato.it/2011/02/argumentmodel/isWarrantIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.essepuntato.it/2011/02/argumentmodel/hasWarrant> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Warrant> <http://www.w3.org/2000/01/rdf-schema#label> "warrant"@en .
+_:Nda8241c6d4a74ea0ad5374f8ce7c37ed <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:N647c7b2a2174414b8afeed92e67b3d34 .
+<http://www.essepuntato.it/2011/02/argumentmodel/Argument> <http://www.w3.org/2000/01/rdf-schema#comment> "An argument, or practical argument according to the 'Toulmin model of argument', focuses on the justificatory function of argumentation: practical arguments first find a claim of interest, and then provide justification for it.\n\nEach argument must be analyzed according to six interrelated components: claim, evidence, warrant, backing, rebuttal and qualifier. The first three elements, 'claim', 'data' and 'warrant', are considered as the essential components of practical arguments, while the second triad, 'qualifier', 'backing', and 'rebuttal', may not be needed in some arguments."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/Backing> <http://www.w3.org/2000/01/rdf-schema#comment> "Sort of credentials that certifies the warrant - e.g., the OWL 2 document specifications."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/isEvidenceIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Claim> <http://www.w3.org/2000/01/rdf-schema#label> "claim"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "has evidence"@en .
+_:N5eaeeb16c1874881964374180a71052d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ne67ab01c495c4fcdaf5c6227b369b447 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nf0cd68dc09a54ae69e3b464bb5311a78 .
+<http://www.essepuntato.it/2011/02/argumentmodel/Warrant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2011/02/argumentmodel/backs> <http://www.w3.org/2000/01/rdf-schema#label> "backs"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/Qualifier> <http://www.w3.org/2000/01/rdf-schema#label> "qualifier"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasClaim> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2011/02/argumentmodel/Claim> .
+_:Nf4c32bd1dec24104bfa15e029d693d53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Nfbc01e71f43f46059f4c5f76dc232456 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N03204be913f649d18850263ec132e53c .
+_:Nd1fa6c1560e241b7b5f7fab20c045751 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/hasRebuttal> .
+<http://www.essepuntato.it/2011/02/argumentmodel/relatesTo> <http://www.w3.org/2000/01/rdf-schema#domain> _:N9bc26371a0614da890861e5bdd598878 .
+<http://www.essepuntato.it/2011/02/argumentmodel/backs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N0fea9b93ac024171b6cbdb2109370fa3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/isBackingIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isQualifierIn> <http://www.w3.org/2000/01/rdf-schema#label> "is qualifier in"@en .
+_:N947c0aeb65bb4af08e36a23a08ae865f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Backing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nb3280e40c1fb48f2bf20456610892a0e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N347e714720844cacb58eb6b38ddb0e76 .
+<http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.essepuntato.it/2011/02/argumentmodel/involves> .
+_:N75a8623d63f84fd88deb2df1ab3aeda7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.essepuntato.it/2011/02/argumentmodel/Argument> .
+<http://www.essepuntato.it/2011/02/argumentmodel/forces> <http://purl.org/dc/elements/1.1/description> "By means of the property chain defined, the assertion that links a qualifier to the relative claim is automatically inferred starting from the high-level description of an argument (realized through the sub-properties of 'involves' and their inverse properties)."@en .
+_:Nc4df3102af0042f091882ce841677df6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2011/02/argumentmodel/isQualifierIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Backing> <http://www.w3.org/2002/07/owl#equivalentClass> _:Nd49da99692104d5dbdab8a5cf8e72e4d .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasQualifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/involves> .
+<http://www.essepuntato.it/2011/02/argumentmodel/leadsTo> <http://www.w3.org/2000/01/rdf-schema#label> "leads to"@en .
+_:N38c7211e05e14811a990a47d43378fe9 <http://www.w3.org/2002/07/owl#intersectionOf> _:Naf761b17299940338394a3ae7eca489d .
+_:N8d048aba3d3940a2b72ed8911056a06c <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2011/02/argumentmodel/isBackingIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel/leadsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2011/02/argumentmodel/Claim> .
+_:Nf2c001a5ff5e4f9382dbe153d7cf65c5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd1fa6c1560e241b7b5f7fab20c045751 .
+_:N2f43762d0015402da0b7e253b4439ebd <http://www.w3.org/2002/07/owl#intersectionOf> _:N502e33df3b1d4590831aa3f9ce866e6f .
+_:Nb29c3f620cea48b19f8743fbc8d05619 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ndb5edfac7dde49eca58ff2e0c3236071 .
+_:Nf4c32bd1dec24104bfa15e029d693d53 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Nf0078ebe78e3428592f272e35229fc5d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N213efa263732418ba532ddc9b36c3cb7 .
+_:Na126b46f56b641138f9f3f475ca59a2c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/hasClaim> .
+_:N5bbb0aab40c141d4a94ec5d0245f96ec <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasQualifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isEvidenceIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn> .
+_:Nf053dfc99521458ba7350b9c76b2d91e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N5eaeeb16c1874881964374180a71052d .
+_:Nd288b3e7b6d34f66890a22fc248935a1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasBacking> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/involves> .
+_:Nd49da99692104d5dbdab8a5cf8e72e4d <http://www.w3.org/2002/07/owl#intersectionOf> _:N0940ab1a035b4a23a4c481c76e61d47a .
+_:Nf0d1ba10a8c84d6cbac32494d46f1cad <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isValidUnless> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/relatesTo> .
+_:Nf0cd68dc09a54ae69e3b464bb5311a78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.essepuntato.it/2011/02/argumentmodel/backs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2011/02/argumentmodel/Backing> .
+_:Nec38f8971de14b0bba4187f0730704db <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N743ac28759294b7b8e4935e85446536d .
+_:N213efa263732418ba532ddc9b36c3cb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd288b3e7b6d34f66890a22fc248935a1 .
+_:N5aa541fcd2214c3f89667955ecd1e5de <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.essepuntato.it/2011/02/argumentmodel/relatesTo> <http://www.w3.org/2000/01/rdf-schema#label> "relates to"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/Evidence> <http://www.w3.org/2002/07/owl#equivalentClass> _:N2f43762d0015402da0b7e253b4439ebd .
+_:Nf0d1ba10a8c84d6cbac32494d46f1cad <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/Warrant> .
+_:N502e33df3b1d4590831aa3f9ce866e6f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isRebuttalIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel/relatesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel/forces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasClaim> <http://www.w3.org/2000/01/rdf-schema#comment> "An argument includes a claim as one of its (mandatory) components."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/forces> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2011/02/argumentmodel/Claim> .
+<http://www.essepuntato.it/2011/02/argumentmodel/proves> <http://www.w3.org/2000/01/rdf-schema#label> "proves"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasClaim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel/leadsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2011/02/argumentmodel/Warrant> .
+_:N9bc26371a0614da890861e5bdd598878 <http://www.w3.org/2002/07/owl#unionOf> _:N24c52741b0e640799188233e628e709e .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://www.w3.org/2000/01/rdf-schema#comment> "L'Ontologia del Modello di Argomentazione \u00E8 un'ontologia OWL 2 DL che permette la descrizione dell'apparato argomentativo conformemente alla teoria di Toulmin."@it .
+_:Nb2df9a45935d49b3a2d7ef8a55debcaf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasBacking> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2011/02/argumentmodel/Argument> .
+_:N38c7211e05e14811a990a47d43378fe9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Na126b46f56b641138f9f3f475ca59a2c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N010dfd7c46a843fa9b5ed76be903f209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/Qualifier> .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://www.w3.org/2000/01/rdf-schema#comment> "The Argument Model Ontology is an OWL 2 DL ontology that allows to describe argumentation according to the 'Toulmin Model of Argument'."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://purl.org/dc/elements/1.1/rights> "Questa ontologia \u00E8 distribuita con licenza Creative Commons Attribution - http://creativecommons.org/licenses/by/3.0"@it .
+<http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity> <http://www.w3.org/2000/01/rdf-schema#label> "argumentation entity"@en .
+_:N5aa541fcd2214c3f89667955ecd1e5de <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasRebuttal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2011/02/argumentmodel/Argument> .
+<http://www.essepuntato.it/2011/02/argumentmodel/involves> <http://purl.org/dc/elements/1.1/description> "This property and its sub-properties serve to describe an argument from an high-level perspective (i.e., which argumentation entities take part in it and what role they hold) rather than from a factual point of view (i.e., how argumentation entities are inter-linked between them)."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/Rebuttal> <http://www.w3.org/2002/07/owl#equivalentClass> _:N301491d70e1149f18133e5b9dd0cce88 .
+<http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Claim> <http://www.w3.org/2002/07/owl#equivalentClass> _:N643c949124cf47519a428e7198eac34d .
+_:N582ab7b3507840bfbdade898e388a65e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N347e714720844cacb58eb6b38ddb0e76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/hasClaim> .
+_:Nf0cd68dc09a54ae69e3b464bb5311a78 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.essepuntato.it/2011/02/argumentmodel/Argument> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Qualifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Words or phrases that express the degree of certainty of the claim such as \u201Ccertainly\u201D, \u201Cpossible\u201D, \u201Cprobably\u201D, \u201Cpresumably\u201D, etc."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/isEvidenceIn> <http://www.w3.org/2000/01/rdf-schema#comment> "An argumentative entity linked to an argument in which it is considered an evidence."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/Claim> <http://www.w3.org/2000/01/rdf-schema#comment> "A fact that must be established - e.g., 'This is a consistent OWL ontology'."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasWarrant> <http://www.w3.org/2000/01/rdf-schema#label> "has warrant"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/isBackingIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel/involves> <http://www.w3.org/2000/01/rdf-schema#comment> "An argument involves an argumentation entity (claim, evidence, warrant, backing, rebuttal) or a qualifier."@en .
+_:Nd12e4a3d28184ea9b48212e7610bf70d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/Backing> .
+<http://www.essepuntato.it/2011/02/argumentmodel/backs> <http://www.w3.org/2000/01/rdf-schema#comment> "A backing that attests the warrant of an argument."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/proves> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:Nb3280e40c1fb48f2bf20456610892a0e .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasRebuttal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2011/02/argumentmodel/Rebuttal> .
+_:N5effa573bcb042f2b05ebd96f029bb77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nf563934814514f6887ce7c8bb5df0fc3 .
+<http://www.essepuntato.it/2011/02/argumentmodel/isWarrantIn> <http://www.w3.org/2000/01/rdf-schema#comment> "An argumentative entity linked to an argument in which it is considered a warrant."@en .
+_:Ndc895b30f234414bb6dcc881f42ed171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.essepuntato.it/2011/02/argumentmodel/supports> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/relatesTo> .
+_:Na1c5614cd4a54794ba6db6e0b34dc253 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/isWarrantIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isQualifierIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.essepuntato.it/2011/02/argumentmodel/hasQualifier> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isWarrantIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel/leadsTo> <http://purl.org/dc/elements/1.1/description> "A warrant that points to a claim from the related evidence within an argument."@en .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://purl.org/dc/elements/1.1/creator> "Fabio Vitali"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isWarrantIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nf563934814514f6887ce7c8bb5df0fc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/hasClaim> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasRebuttal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://purl.org/dc/elements/1.1/creator> "Silvio Peroni"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasWarrant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2011/02/argumentmodel/Warrant> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasBacking> <http://www.w3.org/2000/01/rdf-schema#comment> "An argument includes a backing as one of its (optional) components."@en .
+_:Naf761b17299940338394a3ae7eca489d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nda8241c6d4a74ea0ad5374f8ce7c37ed .
+<http://www.essepuntato.it/2011/02/argumentmodel/isValidUnless> <http://www.w3.org/2000/01/rdf-schema#comment> "A claim that is restricted by a rebuttal of an argument."@en .
+_:N582ab7b3507840bfbdade898e388a65e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N8738016682a040e3872f2e2b49f12051 .
+_:N947c0aeb65bb4af08e36a23a08ae865f <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasRebuttal> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/involves> .
+_:Nb723f4ccaa7a4643a0348934fd2e6980 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N947c0aeb65bb4af08e36a23a08ae865f .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N643c949124cf47519a428e7198eac34d <http://www.w3.org/2002/07/owl#intersectionOf> _:Nf053dfc99521458ba7350b9c76b2d91e .
+<http://www.essepuntato.it/2011/02/argumentmodel/involves> <http://www.w3.org/2000/01/rdf-schema#range> _:N647b29811b0446f79feaf729f74a6484 .
+_:Na9d8415d956c477ba5ec351f6c0d4363 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn> .
+_:N3e7e17325ef4408895c5e7094b213d25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N924c777c61b2435992fc7fce02128db6 .
+<http://www.essepuntato.it/2011/02/argumentmodel/Qualifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isQualifierIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Argument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Nb2df9a45935d49b3a2d7ef8a55debcaf .
+<http://www.essepuntato.it/2011/02/argumentmodel/involves> <http://www.w3.org/2000/01/rdf-schema#label> "involves"@en .
+_:N75a8623d63f84fd88deb2df1ab3aeda7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2011/02/argumentmodel/isClaimIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isQualifierIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel/forces> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/relatesTo> .
+<http://www.essepuntato.it/2011/02/argumentmodel/proves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2011/02/argumentmodel/Evidence> .
+_:Nf563934814514f6887ce7c8bb5df0fc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N643c949124cf47519a428e7198eac34d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nd1fa6c1560e241b7b5f7fab20c045751 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isClaimIn> <http://www.w3.org/2000/01/rdf-schema#comment> "An argumentative entity linked to an argument in which it is considered a claim."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/forces> <http://www.w3.org/2000/01/rdf-schema#label> "forces"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2011/02/argumentmodel/Evidence> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isValidUnless> <http://www.w3.org/2000/01/rdf-schema#label> "is valid unless"@en .
+_:Nb29c3f620cea48b19f8743fbc8d05619 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/isClaimIn> .
+_:N647b29811b0446f79feaf729f74a6484 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nb3280e40c1fb48f2bf20456610892a0e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/isEvidenceIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is involved in"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/leadsTo> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:Na1c5614cd4a54794ba6db6e0b34dc253 .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://purl.org/dc/elements/1.1/title> "Ontologia del Modello di Argomentazione"@it .
+<http://www.essepuntato.it/2011/02/argumentmodel/isClaimIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/isInvolvedIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel/supports> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2011/02/argumentmodel/Evidence> .
+_:Nf0078ebe78e3428592f272e35229fc5d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/isQualifierIn> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasBacking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2011/02/argumentmodel/Backing> .
+_:N8738016682a040e3872f2e2b49f12051 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N75a8623d63f84fd88deb2df1ab3aeda7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasRebuttal> <http://www.w3.org/2000/01/rdf-schema#comment> "An argument includes a rebuttal as one of its (optional) components."@en .
+_:N5effa573bcb042f2b05ebd96f029bb77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/isQualifierIn> .
+_:Nd49da99692104d5dbdab8a5cf8e72e4d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N743ac28759294b7b8e4935e85446536d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Na9d8415d956c477ba5ec351f6c0d4363 .
+_:Nc2a8a4f85094467baa903cf8e50f3cef <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/Rebuttal> .
+_:Nf4c32bd1dec24104bfa15e029d693d53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2011/02/argumentmodel/hasEvidence> .
+<http://www.essepuntato.it/2011/02/argumentmodel/supports> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2011/02/argumentmodel/Warrant> .
+_:N03204be913f649d18850263ec132e53c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb723f4ccaa7a4643a0348934fd2e6980 .
+_:N924c777c61b2435992fc7fce02128db6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/Evidence> .
+<http://www.essepuntato.it/2011/02/argumentmodel/backs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/spar/cito/givesBackgroundTo> .
+<http://www.essepuntato.it/2011/02/argumentmodel/proves> <http://www.w3.org/2000/01/rdf-schema#comment> "An evidence that founds a claim of an argument."@en .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N8c905500751c41209b22dcb3489d3113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2011/02/argumentmodel/Argument> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isClaimIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.essepuntato.it/2011/02/argumentmodel/hasClaim> .
+_:Ndc895b30f234414bb6dcc881f42ed171 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.essepuntato.it/2011/02/argumentmodel/Argument> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasQualifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An argument includes a qualifier as one of its (optional) components."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "evidence"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/relatesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasClaim> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2011/02/argumentmodel/Argument> .
+_:N03204be913f649d18850263ec132e53c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N5aa541fcd2214c3f89667955ecd1e5de .
+<http://www.essepuntato.it/2011/02/argumentmodel/Qualifier> <http://www.w3.org/2002/07/owl#equivalentClass> _:Nc4df3102af0042f091882ce841677df6 .
+<http://www.essepuntato.it/2011/02/argumentmodel/proves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://purl.org/dc/elements/1.1/date> "2011-05-04" .
+<http://www.essepuntato.it/2011/02/argumentmodel/isRebuttalIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel/proves> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2011/02/argumentmodel/Claim> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Backing> <http://www.w3.org/2000/01/rdf-schema#label> "backing"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasWarrant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N8d048aba3d3940a2b72ed8911056a06c <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.essepuntato.it/2011/02/argumentmodel/Argument> .
+_:Nd288b3e7b6d34f66890a22fc248935a1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/isWarrantIn> .
+_:N3e7e17325ef4408895c5e7094b213d25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/Claim> .
+<http://www.essepuntato.it/2011/02/argumentmodel> <http://purl.org/dc/elements/1.1/description> "Nella maggior parte dei suoi lavori, Toulmin ha evidenziato come l'assolutismo (rappresentato da argomenti teorici o analitici) abbia un valore pratico limitato. L'assolutismo \u00E8 derivato dalla logica formale idealizzata di Platone, che supporta pienamente la verit\u00E0 universale. Conformemente, gli assolutisti credono che le questioni morali possano essere risolte attraverso l'uso di ben stabiliti principi morali, in modo del tutto indipendente dal contesto. Contrariamente, Toulmin asseriscie che la maggior parte di questi cos\u00EC detti principi morali sono irrilevanti per le situazioni reali affrontate dagli esseri umani nella vita di tutti i giorni.\n\nPer dare pi\u00F9 vigore a quest sua idea, Toulmin ha introdutto il concetto di campi argomentativi: in \"The Uses of Argument (1958)\", Toulmin afferma che alcuni aspetti dell'argomentazione variano da campo a campo e sono conseguentemente chiamati \"dipendenti\", mentre altri aspetti sono percepiti allo stesso modo in tutti i campi e vengono quindi chiamati \"invarianti\". Toulmin crede che il fallimento dell'assolutismo sia da amputare allo trascurare gli aspetti \"dipendenti\" dell'argomentazione; infatti l'assolutismo assume che tutti gli aspetti argomentativi siano \"invarianti\".\n\nCome conseguenza a queste critiche, Toulmin ha sviluppato un tipo differente di argomentazione, chiamato argomentazione pratica (anche conosciuto come argomentazione sostanziale). In contrasto con l'argomentazione teorica degli assolutisti, l'argomentazione pratica di Toulmin si focalizza sulla fuzione giustificativa dell'argomentazione, opposta alla funzione inferenziale dell'argomentazione teorica. Laddove l'argomentazione teorica produce inferenze sulla base di un insieme di principi per poi arrivare alla \"pretesa\", l'argomentazione pratica prima trova una \"pretesa\" di interesse per poi fornirne una giustificazione. Toulmin crede che il ragionamento sia meno un'attivit\u00E0 di inferenza, che coinvolge l'identificazione di nuove idee, e pi\u00F9 un processo di verifica di idee che gi\u00E0 esistono - ovvero un atto raggiungibile attraverso il processo di giustificazione.\n\nToulmin credeva che, per essere efficacie, una buona argomentazione necessita di una buona giustificazione per una \"pretesa\". Lui credeva che questo avrebbe permesso di resistere alle critiche e di guadagnare un verdetto favorevole. Toulmin proponeva una struttura contenente sei componenti intercorrelate per analizzare le argomentazioni: pretesa (claim), dato (evidence), garanzia (warrant), fondamento (backing), qualificatore (qualifier) e confutazione (rebuttal).\n\nQuesta ontologia si propone di codificare la teoria di Toulmin attraverso classi e propriet\u00E0 OWL in modo da descrivere una rete di entit\u00E0 intercollegate che partecipano, con un ruolo specifico, ad uno o pi\u00F9 argomentazioni.\n\nIn pi\u00F9, l'ontologia \u00E8 allineata con CiTO (Citation Typing Ontology, http://purl.org/spar/cito), un'ontologia per la caratterizzazione di citazioni (fattuali e retoriche) che \u00E8 parte di SPAR, una suite di ontologie per il Semantic Publishing and Referencing."@it .
+_:Nb2df9a45935d49b3a2d7ef8a55debcaf <http://www.w3.org/2002/07/owl#intersectionOf> _:Nfbc01e71f43f46059f4c5f76dc232456 .
+_:N347e714720844cacb58eb6b38ddb0e76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.essepuntato.it/2011/02/argumentmodel/leadsTo> <http://purl.org/dc/elements/1.1/description> "By means of the property chain defined, the assertion that links a warrant to the relative claim is automatically inferred starting from the high-level description of an argument (realized through the sub-properties of 'involves' and their inverse properties)."@en .
+_:Nf053dfc99521458ba7350b9c76b2d91e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity> .
+<http://www.essepuntato.it/2011/02/argumentmodel/involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2011/02/argumentmodel/involves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2011/02/argumentmodel/Argument> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Rebuttal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2011/02/argumentmodel/proves> <http://purl.org/dc/elements/1.1/description> "By means of the property chain defined, the assertion that links an evidence to the relative claim is automatically inferred starting from the high-level description of an argument (realized through the sub-properties of 'involves' and their inverse properties)."@en .
+_:Nda8241c6d4a74ea0ad5374f8ce7c37ed <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Ndc895b30f234414bb6dcc881f42ed171 .
+_:N924c777c61b2435992fc7fce02128db6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nc2a8a4f85094467baa903cf8e50f3cef .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasWarrant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/involves> .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasWarrant> <http://www.w3.org/2000/01/rdf-schema#comment> "An argument includes a warrant as one of its (mandatory) components."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "An argument includes an evidence as one of its (mandatory) components."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/isValidUnless> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2011/02/argumentmodel/Rebuttal> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isQualifierIn> <http://www.w3.org/2000/01/rdf-schema#comment> "An sentence or word linked to an argument with the scope of qualifying the argument claim."@en .
+_:N301491d70e1149f18133e5b9dd0cce88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nf0cd68dc09a54ae69e3b464bb5311a78 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2011/02/argumentmodel/isRebuttalIn> .
+_:Na9d8415d956c477ba5ec351f6c0d4363 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N647b29811b0446f79feaf729f74a6484 <http://www.w3.org/2002/07/owl#unionOf> _:N64d5febf743d4ede9b8e920a0b899a37 .
+<http://www.essepuntato.it/2011/02/argumentmodel/isBackingIn> <http://www.w3.org/2000/01/rdf-schema#comment> "An argumentative entity linked to an argument in which it is considered a backing."@en .
+_:Naf761b17299940338394a3ae7eca489d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity> .
+<http://www.essepuntato.it/2011/02/argumentmodel/isRebuttalIn> <http://www.w3.org/2000/01/rdf-schema#comment> "An argumentative entity linked to an argument in which it is considered a rebuttal."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/hasClaim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nc4df3102af0042f091882ce841677df6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.essepuntato.it/2011/02/argumentmodel/Argument> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Argument> <http://www.w3.org/2000/01/rdf-schema#label> "argument"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/isBackingIn> <http://www.w3.org/2000/01/rdf-schema#label> "is backing in"@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/Rebuttal> <http://www.w3.org/2000/01/rdf-schema#comment> "Restrictions that may be applied to the claim - 'Unless a reasoner for OWL 2 proves that it is not consistent'."@en .
+<http://www.essepuntato.it/2011/02/argumentmodel/backs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2011/02/argumentmodel/relatesTo> .
+_:Nb43510458d094a5fad7d55ef6f79b014 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.essepuntato.it/2011/02/argumentmodel/Claim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Na430ba5f49884d56adef0a8c87e82ac5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2011/02/argumentmodel/ArgumentationEntity> .
+
